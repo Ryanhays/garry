@@ -1,0 +1,265 @@
+/* Custom Styles! */
+.fullscreen-background {
+  position:fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  background-color:#d7d7d7;
+  z-index:-1;
+}
+
+.fluid-width-video-wrapper {margin: 2rem 0;}
+.entry-content {
+  ul {margin:0 2rem; list-style-type:circle;
+    li {list-style-type:circle; margin: 1rem 0; font-weight:500;}
+  }
+}
+
+.fluid-width-video-wrapper {
+    width: 480px !important;
+    max-width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 40px auto  !important;
+}
+
+// Basic Adjustments
+
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+body {background-color:#d7d7d7;}
+a {text-decoration: underline;}
+.site-content {padding:3.5rem 0 5rem 0;}
+.entry-header {padding:1.5rem 0 0.35rem 0;}
+
+.size-full {max-width:100%; height:auto;}
+
+.alignleft {float:left; margin: 0px 25px 20px 0px;}
+.alignright {float:right; margin: 0px 0px 20px 20px;}
+
+figure.alignnone {
+  width: 100% !important;
+  margin: 2rem 0 !important;
+  img {width:100% !important;}
+  .wp-caption-text {font-size: 12px; text-transform: uppercase; text-align:center;}
+}
+.wp-caption-text {font-size: 12px !important;}
+
+
+.gallery-columns-2 figure.gallery-item {
+  width: 50% !important;
+  margin: 2rem 0 !important;
+  float:left;
+  a {
+    position:relative;
+    display:block;
+    height:0;
+    padding-bottom: 66.67%;
+    overflow: hidden;
+    img {width:100%; position:absolute; object-fit: cover; object-position: 50% 50%;}
+  }
+  .wp-caption-text {font-size: 0.85rem; text-transform: uppercase; text-align:center;}
+}
+
+.gallery-columns-3 figure.gallery-item {
+  width: 33.333% !important;
+  margin: 2rem 0 !important;
+  float:left;
+  a {
+    position:relative;
+    display:block;
+    height:0;
+    padding-bottom: 66.67%;
+    overflow: hidden;
+    img {width:100%; position:absolute; object-fit: cover; object-position: 50% 50%;}
+  }
+  .wp-caption-text {font-size: 0.85rem; text-transform: uppercase; text-align:center;}
+}
+
+.gallery-columns-4 figure.gallery-item {
+  width: 25% !important;
+  margin: 2rem 0 !important;
+  float:left;
+  a {
+    position:relative;
+    display:block;
+    height:0;
+    padding-bottom: 66.67%;
+    overflow: hidden;
+    img {width:100%; position:absolute; object-fit: cover; object-position: 50% 50%;}
+  }
+  .wp-caption-text {font-size: 0.85rem; text-transform: uppercase; text-align:center;}
+}
+
+.gallery-columns-5 figure.gallery-item {
+  width: 20% !important;
+  margin: 2rem 0 !important;
+  float:left;
+  a {
+    position:relative;
+    display:block;
+    height:0;
+    padding-bottom: 66.67%;
+    overflow: hidden;
+    img {width:100%; position:absolute; object-fit: cover; object-position: 50% 50%;}
+  }
+  .wp-caption-text {font-size: 0.85rem; text-transform: uppercase; text-align:center;}
+}
+
+
+// Custom Helpers
+.hider {
+  display: none;
+}
+
+/* Nav Styles! */
+nav {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  font-family: 'Gotham';
+  font-weight: 500;
+  padding:0 1rem;
+  .background-tone {background:#ebebeb; position:absolute; top:0px; left:0px; right:0px; bottom:0px; display:none;}
+  a {text-transform: capitalize !important; font-size:0.8rem !important; text-decoration: none !important;}
+  a:hover {background-color: transparent !important; text-decoration:underline;}
+  .brand-logo {font-size:1.1rem !important; letter-spacing:0.03rem; text-decoration: none !important;}
+  .current_page_item a {font-weight: 900 !important;}
+  a.button-collapse {
+    text-decoration:none !important;
+    &:hover {text-decoration: none !important;}
+  }
+  #primary-menu {
+   li:last-of-type a {
+     padding-right:0 !important;
+   }
+  }
+}
+.side-nav {top:0px;}
+
+
+/* Welcome */
+.welcome-block {
+  position: relative;
+  top:170px;
+  a.welcome-link {
+    color: #383838;
+    text-decoration: none !important;
+    p {font-size:1.2rem;}
+  }
+  a.welcome-link:hover h4, a.welcome-link:hover p, a.welcome-link:hover hr {opacity:0.7 !important;}
+  .welcome-title {
+    font-weight:900;
+    text-align:center;
+    text-transform:uppercase !important;
+    width:100%;
+  }
+  hr {
+    border-top: 1px solid #777777;
+    border-bottom: none;
+    max-width: 50%;
+  }
+}
+
+// Intelligent Artist Management
+h5.iam {
+  display:inline;
+  vertical-align: bottom;
+  margin: 1.14rem 0 0.912rem 0;
+  line-height: 225%;
+  img {margin-right:10px;}
+}
+.artist-card {
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  img {width:100%; height:auto;}
+  &:hover {
+    opacity:0.7;
+  }
+}
+.prev-post {
+  position:fixed;
+  width: 300px;
+  max-width: 9%;
+  left:30px;
+  top: 50%;
+  transform: translateY(-50%);
+  a {margin-left: 30px; text-decoration: none;}
+  h5 {font-size:1.4rem;}
+  p {text-transform: uppercase; ; font-size:0.9rem; margin-top: -5px; position:relative;}
+  p:hover {text-decoration: underline !important;}
+}
+.next-post {
+  position:fixed;
+  width: 250px;
+  max-width: 9%;
+  right:30px;
+  top: 50%;
+  transform: translateY(-50%);
+  a {margin-right: 30px; text-decoration: none;}
+  h5 {font-size:1.4rem;}
+  p {text-transform: uppercase; ; font-size:0.9rem; margin-top: -5px; position:relative;}
+  p:hover {text-decoration: underline !important;}
+}
+
+
+
+
+// Content Sections
+
+
+// Footer
+
+
+// Sidebar
+
+
+// Forms
+
+.contact-form {
+  font-style:italic;
+  input {
+    font-style:initial;
+  }
+  textarea {
+    resize: none;
+    transition: all .1s;
+    min-height:140px;
+    border:0px;
+    border-bottom:1px solid #9e9e9e;
+    &:focus {border-bottom:2px solid #383838}
+  }
+  .wpcf7-submit {
+    float: right;
+    background: none;
+    border: 0px;
+    font-weight: 500;
+    &:hover {text-decoration: underline;}
+  }
+}
+
+// Form Errors
+.wpcf7-validation-errors, .wpcf7-mail-sent-ng, .wpcf7-spam-blocked {
+  border:0px !important;
+  font-size:0.7rem;
+  padding:0px !important;
+  width:100%;
+  text-align:right;
+}
+.wpcf7-not-valid-tip {
+  font-size:0.7rem !important;
+  color:#7c1d1d !important;
+  &::before {content: "^ ";}
+}
+
+
+// WP ADMIN
+
+#wpadminbar {position:fixed !important;}
+#wp-admin-bar-top-secondary, #wp-admin-bar-customize, #wp-admin-bar-updates, #wp-admin-bar-comments, #wp-admin-bar-new-content, #wp-admin-bar-edit {display:none;}

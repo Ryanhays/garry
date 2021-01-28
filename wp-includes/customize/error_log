@@ -1,0 +1,4 @@
+[30-Jul-2020 13:25:12 America/New_York] PHP Fatal error:  Class 'WP_Customize_Control' not found in /home/odachv/live.boyintree.com/garry/wp-includes/customize/class-wp-widget-form-customize-control.php on line 17
+[31-Jul-2020 06:26:53 America/New_York] PHP Fatal error:  Class 'WP_Customize_Control' not found in /home/odachv/live.boyintree.com/garry/wp-includes/customize/class-wp-customize-theme-control.php on line 17
+[31-Jul-2020 15:52:23 America/New_York] PHP Fatal error:  Class 'WP_Customize_Control' not found in /home/odachv/live.boyintree.com/garry/wp-includes/customize/class-wp-widget-form-customize-control.php on line 17
+[31-Jul-2020 15:52:50 America/New_York] PHP Fatal error:  Class 'WP_Customize_Control' not found in /home/odachv/live.boyintree.com/garry/wp-includes/customize/class-wp-widget-form-customize-control.php on line 17

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+// Mixins
+// @import "components/prefixer";
+@import "components/mixins";
+@import "components/color";
+
+// Variables;
+@import "components/variables";
+
+// Reset
+@import "components/normalize";
+
+// components
+@import "components/global";
+@import "components/icons-material-design";
+@import "components/grid";
+@import "components/navbar";
+@import "components/roboto";
+@import "components/typography";
+@import "components/cards";
+@import "components/toast";
+@import "components/tabs";
+@import "components/tooltip";
+@import "components/buttons";
+@import "components/dropdown";
+@import "components/waves";
+@import "components/modal";
+@import "components/collapsible";
+@import "components/chips";
+@import "components/materialbox";
+@import "components/form";
+@import "components/table_of_contents";
+@import "components/sideNav";
+@import "components/preloader";
+@import "components/slider";
+@import "components/carousel";
+@import "components/date_picker/default.scss";
+@import "components/date_picker/default.date.scss";
+@import "components/date_picker/default.time.scss";
+
+@import "custom_styles.scss";
+
+
+
+
+
+@media #{$small-and-down} {
+  .site-content {padding: 0rem 0 1.5rem 0;}
+  .side-nav {top:0px;}
+  .size-full {width:100%;}
+  .gallery-columns-2 figure.gallery-item {width: 100% !important; margin: 1rem 0 !important;}
+  .gallery-columns-3 figure.gallery-item {width: 100% !important; margin: 1rem 0 !important;}
+  .gallery-columns-4 figure.gallery-item {width: 100% !important; margin: 1rem 0 !important;}
+  .gallery-columns-5 figure.gallery-item {width: 100% !important; margin: 1rem 0 !important;}
+  .alignleft, .alignright {margin-right:0px; margin-left:0px;}
+  .fullscreen-background {opacity:0.5;}
+}
+
+@media #{$medium-and-up} {
+
+}
+
+
+@media #{$medium-and-down} {
+  html {margin-top:0px !important;}
+  #wpadminbar {display:none !important;}
+  .next-post, .prev-post {display:none;}
+  .entry-header {
+    padding: 0.5rem 0 0.35rem 0;
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 90%;
+  }
+
+}
+
+@media #{$large-and-up} {
+  nav a {text-transform: capitalize !important; font-size:0.85rem !important;}
+}
