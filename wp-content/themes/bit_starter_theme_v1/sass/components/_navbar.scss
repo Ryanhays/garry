@@ -95,7 +95,12 @@ nav {
     }
     a {
       transition: background-color .3s;
-      font-size: 1rem;
+      font-size: 1.2rem;
+      font-size: 1.2rem !important;
+      letter-spacing: 0.08rem;
+      text-decoration: none !important;
+      text-transform: uppercase !important; 
+      font-weight: 500 !important;
       color: $navbar-font-color;
       display: block;
       padding: 0 15px;

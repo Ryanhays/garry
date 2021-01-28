@@ -28,7 +28,7 @@
  *
  * @author Google, Inc.
  */
-class Google_Service_Storage extends Google_Service
+class Google_Service_Storage extends UDP_Google_Service
 {
   /** View and manage your data across Google Cloud Platform services. */
   const CLOUD_PLATFORM =
@@ -54,9 +54,9 @@ class Google_Service_Storage extends Google_Service
   /**
    * Constructs the internal representation of the Storage service.
    *
-   * @param Google_Client $client
+   * @param UDP_Google_Client $client
    */
-  public function __construct(Google_Client $client)
+  public function __construct(UDP_Google_Client $client)
   {
     parent::__construct($client);
     $this->servicePath = 'storage/v1/';

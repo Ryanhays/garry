@@ -5,7 +5,7 @@
   left:0px;
   right:0px;
   bottom:0px;
-  background-color:#d7d7d7;
+  background-color:#eb7539;
   z-index:-1;
 }
 
@@ -16,6 +16,10 @@
   }
 }
 
+.entry-content img {
+  border-radius: 6px;
+}
+
 .fluid-width-video-wrapper {
     width: 480px !important;
     max-width: 100%;
@@ -24,6 +28,20 @@
     margin: 40px auto  !important;
 }
 
+
+.wpcf7-form {
+  input, textarea {
+    border: 0px !important;
+    background-color: rgba(0, 0, 0, 0.07);
+    border-radius: 7px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
 // Basic Adjustments
 
 :focus {
@@ -31,7 +49,7 @@
   outline-style: none;
 }
 
-body {background-color:#d7d7d7;}
+body {background-color:#eb7539 !important;}
 a {text-decoration: underline;}
 .site-content {padding:3.5rem 0 5rem 0;}
 .entry-header {padding:1.5rem 0 0.35rem 0;}
@@ -120,14 +138,13 @@ figure.alignnone {
 nav {
   background-color: transparent !important;
   box-shadow: none !important;
-  font-family: 'Gotham';
-  font-weight: 500;
+  font-family: 'adobe-caslon-pro, serif;';
+  font-weight: 400;
   padding:0 1rem;
   .background-tone {background:#ebebeb; position:absolute; top:0px; left:0px; right:0px; bottom:0px; display:none;}
-  a {text-transform: capitalize !important; font-size:0.8rem !important; text-decoration: none !important;}
+  a {font-size:1.2rem !important; letter-spacing:0.08rem; text-decoration: none !important; font-weight: 500 !important}
   a:hover {background-color: transparent !important; text-decoration:underline;}
-  .brand-logo {font-size:1.1rem !important; letter-spacing:0.03rem; text-decoration: none !important;}
-  .current_page_item a {font-weight: 900 !important;}
+  .brand-logo {font-size:1.2rem !important; letter-spacing:0.08rem; text-decoration: none !important; font-weight: 500 !important}
   a.button-collapse {
     text-decoration:none !important;
     &:hover {text-decoration: none !important;}
@@ -146,7 +163,7 @@ nav {
   position: relative;
   top:170px;
   a.welcome-link {
-    color: #383838;
+    color: #000000;
     text-decoration: none !important;
     p {font-size:1.2rem;}
   }
@@ -233,7 +250,7 @@ h5.iam {
     min-height:140px;
     border:0px;
     border-bottom:1px solid #9e9e9e;
-    &:focus {border-bottom:2px solid #383838}
+    &:focus {border-bottom:2px solid #000000}
   }
   .wpcf7-submit {
     float: right;

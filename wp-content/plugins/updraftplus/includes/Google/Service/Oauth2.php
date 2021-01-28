@@ -28,7 +28,7 @@
  *
  * @author Google, Inc.
  */
-class Google_Service_Oauth2 extends Google_Service
+class Google_Service_Oauth2 extends UDP_Google_Service
 {
   /** Know your basic profile info and list of people in your circles.. */
   const PLUS_LOGIN =
@@ -50,9 +50,9 @@ class Google_Service_Oauth2 extends Google_Service
   /**
    * Constructs the internal representation of the Oauth2 service.
    *
-   * @param Google_Client $client
+   * @param UDP_Google_Client $client
    */
-  public function __construct(Google_Client $client)
+  public function __construct(UDP_Google_Client $client)
   {
     parent::__construct($client);
     $this->servicePath = '';

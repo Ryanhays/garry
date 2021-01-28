@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.1.13
+
+- Fix translations. Add .pot template file, reported by @wicko77
+
+## 1.1.12
+
+- Remove 'All' from taxonomy names as suggested by @gnowland
+
+## 1.1.11
+
+- Update assets
+
+## 1.1.10
+
+- Compatibility with future version of WP
+
 ## 1.1.9
 
 - Compatibility with future version of WP

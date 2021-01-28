@@ -18,7 +18,8 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
-<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/materialize.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/materialize.css?ver=4.6.5"  media="screen,projection"/>
+<link rel="stylesheet" href="https://use.typekit.net/dto8qdp.css">
 <link href="<?php bloginfo('template_url'); ?>/bower_components/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 <link rel="icon" href="<?php bloginfo('template_url'); ?>/images/favicon.png" type="image/x-icon" />
 <!--Let browser know website is optimized for mobile-->
