@@ -1,3 +1,29 @@
+/// MAIN MENU HIDDEN
+
+.entry-content {
+  img, figure {
+    max-width: 100%;
+  }
+  .wp-caption-text {
+    display: inline;
+  }
+}
+
+.nav-wrapper .menu-menu-1-container {
+  display: none;
+}
+
+.side-nav {
+  .menu-menu-1-container {
+    display: block !important;
+  }
+}
+
+.button-collapse.right {
+  margin-top: 5px;
+  margin-right: -5px;
+}
+
 /* Custom Styles! */
 .fullscreen-background {
   position:fixed;
@@ -141,21 +167,108 @@ nav {
   font-family: 'adobe-caslon-pro, serif;';
   font-weight: 400;
   padding:0 1rem;
-  .background-tone {background:#ebebeb; position:absolute; top:0px; left:0px; right:0px; bottom:0px; display:none;}
+  .background-tone {background:#eb7539; position:absolute; top:0px; left:0px; right:0px; bottom:0px; display:none;}
   a {font-size:1.2rem !important; letter-spacing:0.08rem; text-decoration: none !important; font-weight: 500 !important}
   a:hover {background-color: transparent !important; text-decoration:underline;}
-  .brand-logo {font-size:1.2rem !important; letter-spacing:0.08rem; text-decoration: none !important; font-weight: 500 !important}
+  .brand-logo {
+    font-size:1.65rem !important;
+    letter-spacing:0.08rem;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
   a.button-collapse {
     text-decoration:none !important;
     &:hover {text-decoration: none !important;}
   }
+  .menu-menu-1-container {
+    position: relative;
+    top: 40px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 50px;
+  }
   #primary-menu {
-   li:last-of-type a {
-     padding-right:0 !important;
-   }
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    float: none;
+    li {
+      float:none;
+    }
+    li:last-of-type a {
+      padding-right:0 !important;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
   }
 }
 .side-nav {top:0px;}
+
+@media only screen and (max-width: 600px) {
+  .alignleft {
+    float:none !important;
+    margin-top: 10px;
+  }
+  nav.menubar {
+    padding: 0 5% !important;
+  }
+  .nav-wrapper {
+    .brand-logo {
+      text-align: left !important;
+      margin-top: 5px;
+      font-size: 1.25rem !important;
+    }
+  }
+}
+
+
+
+/// Footer MENU
+
+.custom-footer {
+  margin-bottom: 50px;
+  a {
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+  }
+  .socials {
+    float:right;
+  }
+}
+
+.moved {
+  .menu-menu-1-container {
+    position: fixed;
+    bottom: 50px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 50px;
+  }
+  #primary-menu {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    float: none;
+    li {
+      float:none;
+    }
+    li:last-of-type a {
+      padding-right:0 !important;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
+  }
+}
 
 
 /* Welcome */
@@ -253,11 +366,17 @@ h5.iam {
     &:focus {border-bottom:2px solid #000000}
   }
   .wpcf7-submit {
-    float: right;
     background: none;
     border: 0px;
     font-weight: 500;
     &:hover {text-decoration: underline;}
+  }
+  .wpcf7-submit {
+    display: block;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
   }
 }
 

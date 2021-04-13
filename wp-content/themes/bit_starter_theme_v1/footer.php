@@ -17,6 +17,42 @@
 
 
 
+<?php if (is_page(5) ) : ?>
+	<div class="custom-footer">
+		<div class="footer-menu">
+
+			<div class="container">
+				<a href="<?php echo site_url(); ?>/contact/" aria-current="page">Contact</a>
+
+				<div class="socials">
+					<a href="mailto:garry@garryscott-irvine.com" target="_blank"><i class="mdi mdi-email" style="margin-right: 10px;"></i></a>
+					<a href="https://twitter.com/gazzalon" target="_blank"><i class="mdi mdi-twitter" style="margin-right: 10px;"></i></a>
+					<a href="https://www.instagram.com/garryscottirvine" target="_blank"><i class="mdi mdi-instagram" style="margin-right: 10px;"></i></a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+<?php else : ?>
+	<div class="custom-footer">
+		<div class="footer-menu">
+
+			<div class="container">
+				<a href="<?php echo site_url(); ?>" aria-current="page">Return</a>
+
+				<div class="socials">
+					<a href="mailto:garry@garryscott-irvine.com"><i class="mdi mdi-email" style="margin-right: 10px;"></i></a>
+					<a href="https://twitter.com/gazzalon" target="_blank"><i class="mdi mdi-twitter" style="margin-right: 10px;"></i></a>
+					<a href="https://www.instagram.com/garryscottirvine" target="_blank"><i class="mdi mdi-instagram" style="margin-right: 10px;"></i></a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+<?php endif; ?>
+
+
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

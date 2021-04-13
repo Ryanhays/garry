@@ -7248,10 +7248,8 @@ nav .nav-wrapper {
   position: relative;
   height: 100%;
 }
-@media only screen and (min-width : 993px) {
-  nav a.button-collapse {
-    display: none;
-  }
+nav a.button-collapse {
+  display: none;
 }
 nav .button-collapse {
   float: left;
@@ -7260,7 +7258,7 @@ nav .button-collapse {
   height: 50px;
 }
 nav .button-collapse i {
-  font-size: 2.7rem;
+  font-size: 1.65rem;
   height: 50px;
   line-height: 50px;
 }
@@ -10868,6 +10866,26 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-bottom: 5em;
   }
 }
+.entry-content img, .entry-content figure {
+  max-width: 100%;
+}
+.entry-content .wp-caption-text {
+  display: inline;
+}
+
+.nav-wrapper .menu-menu-1-container {
+  display: none;
+}
+
+.side-nav .menu-menu-1-container {
+  display: block !important;
+}
+
+.button-collapse.right {
+  margin-top: 5px;
+  margin-right: -5px;
+}
+
 /* Custom Styles! */
 .fullscreen-background {
   position: fixed;
@@ -11079,7 +11097,7 @@ nav {
   padding: 0 1rem;
 }
 nav .background-tone {
-  background: #ebebeb;
+  background: #eb7539;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -11098,10 +11116,14 @@ nav a:hover {
   text-decoration: underline;
 }
 nav .brand-logo {
-  font-size: 1.2rem !important;
+  font-size: 1.65rem !important;
   letter-spacing: 0.08rem;
   text-decoration: none !important;
   font-weight: 500 !important;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
 }
 nav a.button-collapse {
   text-decoration: none !important;
@@ -11109,12 +11131,85 @@ nav a.button-collapse {
 nav a.button-collapse:hover {
   text-decoration: none !important;
 }
+nav .menu-menu-1-container {
+  position: relative;
+  top: 40px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+nav #primary-menu {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  float: none;
+}
+nav #primary-menu li {
+  float: none;
+}
 nav #primary-menu li:last-of-type a {
   padding-right: 0 !important;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 .side-nav {
   top: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .alignleft {
+    float: none !important;
+    margin-top: 10px;
+  }
+
+  nav.menubar {
+    padding: 0 5% !important;
+  }
+
+  .nav-wrapper .brand-logo {
+    text-align: left !important;
+    margin-top: 5px;
+    font-size: 1.25rem !important;
+  }
+}
+.custom-footer {
+  margin-bottom: 50px;
+}
+.custom-footer a {
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+.custom-footer .socials {
+  float: right;
+}
+
+.moved .menu-menu-1-container {
+  position: fixed;
+  bottom: 50px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+.moved #primary-menu {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  float: none;
+}
+.moved #primary-menu li {
+  float: none;
+}
+.moved #primary-menu li:last-of-type a {
+  padding-right: 0 !important;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 /* Welcome */
@@ -11236,13 +11331,19 @@ h5.iam img {
   border-bottom: 2px solid #000000;
 }
 .contact-form .wpcf7-submit {
-  float: right;
   background: none;
   border: 0px;
   font-weight: 500;
 }
 .contact-form .wpcf7-submit:hover {
   text-decoration: underline;
+}
+.contact-form .wpcf7-submit {
+  display: block;
+  padding: 0.5rem 1rem;
+  background: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 .wpcf7-validation-errors, .wpcf7-mail-sent-ng, .wpcf7-spam-blocked {

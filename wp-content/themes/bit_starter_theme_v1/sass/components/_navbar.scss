@@ -22,9 +22,9 @@ nav {
     height: 100%;
   }
 
-  @media #{$large-and-up} {
+//  @media #{$large-and-up} {
     a.button-collapse { display: none; }
-  }
+//  }
 
 
   // Collapse button
@@ -35,7 +35,7 @@ nav {
     height: $navbar-height-mobile;
 
     i {
-      font-size: 2.7rem;
+      font-size: 1.65rem;
       height: $navbar-height-mobile;
       line-height: $navbar-height-mobile;
     }
@@ -99,7 +99,7 @@ nav {
       font-size: 1.2rem !important;
       letter-spacing: 0.08rem;
       text-decoration: none !important;
-      text-transform: uppercase !important; 
+      text-transform: uppercase !important;
       font-weight: 500 !important;
       color: $navbar-font-color;
       display: block;
